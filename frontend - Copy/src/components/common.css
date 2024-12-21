@@ -1,0 +1,143 @@
+/* General Container Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+/* Logo */
+.logo {
+  width: 200px;
+  margin-bottom: 25px;
+}
+
+/* Title */
+.title {
+  font-size: 25px;
+  margin-bottom: 22px;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Form Styles */
+.form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ecc2c2;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #1db954;
+}
+
+/* Buttons */
+.button {
+  background-color: #1db954;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.logout-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #e60000;
+  transform: scale(1.05);
+}
+
+.logout-button:focus {
+  outline: none;
+  border: 2px solid #1db954;
+}
+
+/* Link Text */
+.switch-text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.switch-text a {
+  color: #1db954;
+  text-decoration: none;
+}
+
+.switch-text a:hover {
+  text-decoration: underline;
+}
+
+/* Home Page */
+.home-container {
+  text-align: center;
+}
+
+.home-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+      margin-top: 30px;
+      padding: 15px;
+  }
+
+  .form {
+      max-width: 100%;
+  }
+
+  .button, .logout-button {
+      font-size: 14px;
+  }
+}

@@ -1,0 +1,63 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  background: linear-gradient(to right, #88cbbe, #4a92c6);  /* Light gradient background */
+  color: #211b1b;
+}
+
+/* Main App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* 404 Page */
+.error-page {
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 10px;
+}
+
+.error-page h1 {
+  font-size: 48px;
+  color: #721c24;
+}
+
+.error-page p {
+  font-size: 18px;
+  color: #721c24;
+}
+
+/* Universal Button */
+.button {
+  background-color: #1db954;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #1ed760;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .error-page h1 {
+      font-size: 28px;
+  }
+
+  .button {
+      width: 100%;
+      font-size: 14px;
+  }
+}
